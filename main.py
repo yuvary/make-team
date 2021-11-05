@@ -10,7 +10,7 @@ token = os.environ['DISCORD_BOT_TOKEN']
 bot = commands.Bot(command_prefix='/')
 
 """起動処理"""
-@bot.event
+@bot.event()
 async def on_ready():
     print('-----Logged in info-----')
     print(bot.user.name)
